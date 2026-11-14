@@ -97,7 +97,8 @@ module tb6;
 ## Operation / Truth Table
 
 Register contents after each active clock edge (sin sequence = 1, 0, 1, 1)
-<img width="406" height="181" alt="image" src="https://github.com/user-attachments/assets/7a5c1c67-a5d5-4160-938b-3647f8630dd7" />
+<img width="719" height="289" alt="exp 6" src="https://github.com/user-attachments/assets/5e616136-575d-4592-89a1-0868980410e9" />
+
 
 ## Simulation Procedure
 
@@ -150,27 +151,8 @@ Q(next) = {Q[2:0], sin}
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected operation table.
 
 ## Output
-<img width="591" height="181" alt="image" src="https://github.com/user-attachments/assets/f27135f4-6a61-4a44-a099-9be11f7cd54b" />
+<img width="1600" height="825" alt="image" src="https://github.com/user-attachments/assets/4680fbb2-1b3a-4829-972c-95631ab9e88e" />
 
-## Viva-Voce Questions
-
-●	What is a shift register, and what are its four basic types (SISO, SIPO, PISO, PIPO)?
-
-●	How does a SIPO shift register differ from a PISO shift register?
-
-●	How many clock pulses are required to fully load a 4-bit SIPO shift register with serial data?
-
-●	How would you modify the design to shift right instead of left?
-
-●	How would you convert this SIPO register into a Serial-In Serial-Out (SISO) register?
-
-●	What is the purpose of the asynchronous reset in this design?
-
-●	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
-
-●	How can a shift register be used to implement a ring counter or Johnson counter?
-
-●	What is the difference between a shift register built from D flip-flops versus one described behaviourally in Verilog, in terms of simulation versus synthesis?
 
 ## Result
 
